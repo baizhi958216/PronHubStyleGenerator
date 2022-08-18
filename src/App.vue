@@ -18,8 +18,6 @@
 import { ref } from 'vue'
 import html2canvas from 'html2canvas'
 import { saveAs } from 'file-saver';
-import 'amfe-flexible'
-import 'amfe-flexible/index'
 let left = ref(''), right = ref('')
 
 const generate = () => {
