@@ -18,6 +18,8 @@
 import { ref } from 'vue'
 import html2canvas from 'html2canvas'
 import { saveAs } from 'file-saver';
+import 'amfe-flexible'
+import 'amfe-flexible/index'
 let left = ref(''), right = ref('')
 
 const generate = () => {
@@ -63,18 +65,20 @@ const generate = () => {
     background-color: rgb(63, 63, 63);
     font-family: 'Fira Code';
     font-weight: 600;
+    margin-bottom: 20px;
   }
 }
 
 .pornbg {
   background-color: black;
-  width: 800px;
-  height: 800px;
+  width: 80%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   font-size: 70px;
+  overflow: scroll;
 
   .gen-left {
     color: white;
